@@ -50,3 +50,5 @@ python game.py
 - Стрелка влево - двигаемся влево.
 
 Играем!
+
+![screen-gif](./myScreen.gif)
