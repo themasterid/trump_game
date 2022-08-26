@@ -51,4 +51,4 @@ python game.py
 
 Играем!
 
-![screen-gif](./myScreen.gif)
+![screen-gif](./img/trump.gif)
