@@ -9,6 +9,17 @@
 - pygame 2.1.2
 
 
+## Клонируем проект:
+```bash
+git clone git@github.com:themasterid/trump_game.git
+```
+
+или
+
+```bash
+git clone https://github.com/themasterid/trump_game.git
+```
+
 ## Установка и активация виртуального окружения, а так же установка и обновление pip с установкой зависимостей:
 ```bash
 cd trump_game
