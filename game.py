@@ -40,8 +40,8 @@ animCount = 0
 def drawWindows():
     global animCount
     win.blit(bg, (0,0))
-    
-    if animCount + 1 >= 30:
+
+    if animCount >= 29:
         animCount = 0
 
     if left:
@@ -52,8 +52,8 @@ def drawWindows():
         animCount +=1
     else:
         win.blit(playerStand, (x, y))
-        
-    
+
+
     pygame.display.update()
 
 run = True
@@ -77,10 +77,7 @@ while run:
         left = False
         right = False
         animCount = 0
-    if not(isJump):
-        if keys[pygame.K_SPACE]:
-            isJump = True
-    else:
+    if isJump:
         if jumpCount >= - 10:
             if jumpCount < 0:
                 y += (jumpCount ** 2)/2
@@ -91,6 +88,8 @@ while run:
             isJump = False
             jumpCount = 10       
 
+    elif keys[pygame.K_SPACE]:
+        isJump = True
     drawWindows()
 
 pygame.quit()
